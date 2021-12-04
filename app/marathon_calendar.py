@@ -18,5 +18,5 @@ def homepage():
     if request.method == 'POST':
         mileage = int(request.form['mileage'])
         runs = get_all_runs(mileage)
-        return render_template('marathon_calendar/index.html', runs=runs)
+        return render_template('marathon_calendar/index.html', runs=runs, mileage=mileage)
     return render_template('home.html')

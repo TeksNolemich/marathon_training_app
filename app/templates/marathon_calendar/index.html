@@ -1,8 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>You have made it the the calendar page</h1>
-<h2>This is where the calendar will print</h2>
-<table>
+<h1>Max weekly mileage - {{ mileage }}</h1>
+<table class="table table-striped">
     <tr>
         <th>Week</th>
         <th>Mileage</th>
@@ -13,8 +12,8 @@
     </tr>
     {% for run in runs %}
     <tr>
-        <td>{{ run['Week'] }}</td>
-        <td>{{ run['Mileage'] }}</td>
+        <th>{{ run['Week'] }}</th>
+        <td>{{ run['Fraction'] }}</td>
         <td>{{ run['Quality_One'] }}</td>
         <td>{{ run['Miles_Quality_One'] }}</td>
         <td>{{ run['Quality_Two'] }}</td>
