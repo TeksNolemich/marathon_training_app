@@ -1,0 +1,8 @@
+Flask
+pymongo[srv]
+Flask-PyMongo
+Flask-Cors
+itsdangerous
+MarkupSafe
+Werkzeug
+

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>
+    Welcome to your Marathon Training Plan Calculator!
+</h1>
+<hr>
+<h2>Enter your estimated weekly max mileage below to get a customized 18 week training plan.</h2>
+<div>
+    <form method="post">
+        <label for="mileage">Weekly Mileage</label>
+        <input name="mileage" for="mileage" id="mileage" type="number" value="{{ request.form['mileage'] }}" required>
+        <input type="submit" value="Save">
+    </form>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>You have made it the the calendar page</h1>
+<h2>This is where the calendar will print</h2>
+<table>
+    <tr>
+        <th>Week</th>
+        <th>Mileage</th>
+        <th>Quality Run One</th>
+        <th>Quality Run One Mileage</th>
+        <th>Quality Run Two</th>
+        <th>Quality Run Two Mileage</th>
+    </tr>
+    {% for run in runs %}
+    <tr>
+        <td>{{ run['Week'] }}</td>
+        <td>{{ run['Mileage'] }}</td>
+        <td>{{ run['Quality_One'] }}</td>
+        <td>{{ run['Miles_Quality_One'] }}</td>
+        <td>{{ run['Quality_Two'] }}</td>
+        <td>{{ run['Miles_Quality_Two'] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock content %}
