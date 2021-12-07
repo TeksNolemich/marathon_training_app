@@ -12,7 +12,10 @@
     </tr>
     {% for run in runs %}
     <tr>
-        <th>{{ run['Week'] }}</th>
+        <th>
+        <a class="action" href="{{ url_for('marathon_calendar.get_workout') }}">Click Me</a>
+            {{ run['Week'] }}
+        </th>
         <td>{{ run['Fraction'] }}</td>
         <td>{{ run['Quality_One'] }}</td>
         <td>{{ run['Miles_Quality_One'] }}</td>
