@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<!-- <h1>Week {{ Week }}</h1>
+<h2>Total Goal Mileage - {{ Mileage }}</h2> -->
+<div>hello world</div>
+<table class="table table-striped">
+    {% for key, value in runs_for_week.items() %}
+    <tr>
+        <th>
+            {{ key }}
+        </th>
+        <td>{{ value }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
